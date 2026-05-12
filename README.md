@@ -1,5 +1,34 @@
 # pandas-
 
+**Series**
+ Uma Series é um objeto unidimensional semelhante a um array que pode conter qualquer tipo de dado, como inteiros, strings ou floats. 
+
+ //CODE
+import pandas as pd
+data = [10, 20, 30, 40, 50]
+s = pd.Series(data)
+print(s)
+
+**Acessando elemento na series pelo indice**
+
+
+import pandas as pd
+data = [10, 20, 30, 40, 50]
+s = pd.Series(data)
+print("The full Series:")
+print(s)
+print("\nFirst element:", s[0])
+print("\nElements from index 1 to 2:")
+print(s[1:3])
+
+**imprimir o tipo de dados dentro de uma seires**
+
+import pandas as pd
+data = [10, 20, 30, 40, 50]
+s = pd.Series(data)
+print("\nData type:", s.dtype)
+print("Shape:", s.shape)
+
 
 **Criar um dataframe a partir de um dicionário**
 
