@@ -86,3 +86,20 @@ student_data = {
 }
 df = pd.DataFrame(student_data)
 df.info()
+
+**Lendo arquivos .csv **
+
+import pandas as pd
+df = pd.read_csv('data.csv', comment='#')
+print(df)
+
+
+**saber numero de linhas e colunas, respectivamnete, usando shape**
+
+import pandas as pd
+missing_values = ["Not Available", "N/A"]
+df = pd.read_csv('data.csv', comment='#',header=0,na_values=missing_values)
+df_shape = df.shape
+print(df_shape)
+
+
