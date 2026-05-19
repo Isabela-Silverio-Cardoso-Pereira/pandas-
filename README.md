@@ -102,4 +102,5 @@ df = pd.read_csv('data.csv', comment='#',header=0,na_values=missing_values)
 df_shape = df.shape
 print(df_shape)
 
-
+**contando o numero de nulos**
+df.isnull().sum()
